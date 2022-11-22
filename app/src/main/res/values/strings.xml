@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Swap seat task 1</string>
+    <string name="welcome">Welcome</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_your_offer">Create your offer</string>
+    <string name="sport">Sport</string>
+    <string name="country">Country</string>
+    <string name="league">League</string>
+    <string name="select_teams">Select Teams</string>
+    <string name="select_teams2">Select League to see Teams</string>
+    <string name="arsenal">Arsenal</string>
+    <string name="home">Home</string>
+    <string name="offers">Offers</string>
+    <string name="profile">Profile</string>
+    <string name="vip">VIP</string>
+    <string name="with_food">With food</string>
+    <string name="without_food">Without food</string>
+    <string name="select_type">Select type</string>
+    <string name="how_many_people">How many people</string>
+    <string name="_10">10</string>
+    <string name="_1">1</string>
+    <string name="select_category">Select category</string>
+    <string name="adult">Adult</string>
+    <string name="teen">Teen</string>
+    <string name="permission">Permission</string>
+    <string name="always_shirt_allowed">Always shirt allowed</string>
+    <string name="always_support_allowed">Always support allowed</string>
+    <string name="add_images">Add images</string>
+    <string name="button_text">+</string>
+    <string name="add_document_for_verification">Add document for verification</string>
+    <string name="create">Create</string>
+    <string name="arsenalvchelsea">ArsenalvChelsea</string>
+    <string name="_2mb">2Mb</string>
+    <string name="x">x</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="review_in_process">Review in process</string>
+    <string name="thanks_for_creating">Thanks for creating your account, please be patient while we verify your document.</string>
+
+    <string-array name="sport_string_array">
+        <item>Select</item>
+        <item>Football</item>
+        <item>Cricket</item>
+        <item>Basketball</item>
+        <item>Baseball</item>
+    </string-array>
+
+    <string-array name="country_string_array">
+        <item>Select</item>
+        <item>England</item>
+        <item>Spain</item>
+        <item>Germany</item>
+    </string-array>
+
+    <string-array name="league_string_array">
+        <item>Select</item>
+        <item>Premier League</item>
+        <item>Cricket Premier League</item>
+    </string-array>
+
+</resources>

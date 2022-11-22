@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Fragment1">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/customToolbar"
+                        layout="@layout/custom_toolbar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_15"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:text="@string/sport"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14" />
+
+                    <RelativeLayout
+                        android:id="@+id/spinner_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_48"
+                        android:layout_margin="@dimen/dimen_12"
+                        android:background="@drawable/spinner_r_bg"
+                        android:padding="@dimen/dimen_2">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            app:overlapAnchor="false" />
+
+                        <ImageView
+                            android:id="@+id/iv_dummy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/dimen_5"
+                            android:background="@drawable/arrow_bg"
+                            android:padding="@dimen/dimen_5"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_15"
+                        android:text="@string/country"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14" />
+
+                    <RelativeLayout
+                        android:id="@+id/spinner_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_48"
+                        android:layout_margin="@dimen/dimen_12"
+                        android:background="@drawable/spinner_r_bg"
+                        android:padding="@dimen/dimen_2">
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            app:overlapAnchor="false" />
+
+                        <ImageView
+                            android:id="@+id/iv_dummy2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/dimen_5"
+                            android:background="@drawable/arrow_bg"
+                            android:padding="@dimen/dimen_5"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_league"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_15"
+                        android:text="@string/league"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14" />
+
+                    <RelativeLayout
+                        android:id="@+id/spinner_layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_48"
+                        android:layout_margin="@dimen/dimen_12"
+                        android:background="@drawable/spinner_r_bg"
+                        android:padding="@dimen/dimen_2">
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            app:overlapAnchor="false" />
+
+                        <ImageView
+                            android:id="@+id/iv_dummy3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/dimen_5"
+                            android:background="@drawable/arrow_bg"
+                            android:padding="@dimen/dimen_5"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gridview"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_select_teams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:text="@string/select_teams"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_26" />
+
+                <GridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_680"
+                    android:layout_margin="@dimen/dimen_12"
+                    android:horizontalSpacing="@dimen/dimen_10"
+                    android:numColumns="3"
+                    android:verticalSpacing="@dimen/dimen_10" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
